@@ -5,9 +5,22 @@ body {
 canvas {
     display: block;
 }
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+}
 </style>
-<h1>Nice</h1>
-<canvas id="canvas"></canvas>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<div id="container">
+  <canvas id="canvas"></canvas>
+  <h1>Nice</h1>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js"></script>
 <script>
