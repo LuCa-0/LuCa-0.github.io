@@ -191,6 +191,7 @@ function App() {
     for (let i = 0; i < n; i++) {
       colors.push(chroma.random());
     }
+    console.log(chroma.scale(colors));
     return chroma.scale(colors).mode('lch');
   }
 
