@@ -47,7 +47,7 @@ function App() {
   const conf = {
     nx: 40,
     ny: 100,
-    cscale: chroma.scale(['#2175D8', '#DC5DCE', '#CC223D', '#F07414', '#FDEE61', '#74C425']).mode('lch'),
+    cscale: chroma.scale(['2B292E']).mode('lch'),
     darken: -1,
     angle: Math.PI / 3,
     timeCoef: 0.1
@@ -191,7 +191,6 @@ function App() {
     for (let i = 0; i < n; i++) {
       colors.push(chroma.random());
     }
-    console.log(chroma.scale(colors).mode('lch'));
     return chroma.scale(colors).mode('lch');
   }
 
